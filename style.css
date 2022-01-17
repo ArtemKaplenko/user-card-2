@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DEDFE1;
+}
+
+main {
+    margin: 100px auto;
+    height: 50vh;
+    position: relative;
+    max-width: 700px;
+    min-width: 200px;
+    width: 100%;
+}
+
+main>div {
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.card {
+    max-width: 700px;
+    min-width: 200px;
+    width: 100%;
+    max-height: 350px;
+    min-height: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+
+main>div:first-child {
+    top: -20px;
+    left: 20px;
+    max-width: 660px;
+    min-width: 160px;
+    max-height: 310px;
+    min-height: 60px;
+}
+
+main>div:nth-child(2) {
+    top: -40px;
+    left: 40px;
+    max-width: 620px;
+    min-width: 120px;
+    max-height: 270px;
+    min-height: 20px;
+}
+
+main>div:first-child, main>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
